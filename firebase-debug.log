@@ -1,0 +1,50 @@
+[debug] [2025-04-19T14:26:34.177Z] ----------------------------------------------------------------------
+[debug] [2025-04-19T14:26:34.180Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\crush\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2025-04-19T14:26:34.180Z] CLI Version:   14.2.0
+[debug] [2025-04-19T14:26:34.180Z] Platform:      win32
+[debug] [2025-04-19T14:26:34.180Z] Node Version:  v22.14.0
+[debug] [2025-04-19T14:26:34.180Z] Time:          Sat Apr 19 2025 15:26:34 GMT+0100 (UTC+01:00)
+[debug] [2025-04-19T14:26:34.180Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-04-19T14:26:34.188Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-04-19T14:26:34.188Z] > authorizing via signed-in user (itsyasmine13@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\crush\souss-explorer
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2025-04-19T14:27:12.878Z] Checked if tokens are valid: true, expires at: 1745076306977
+[debug] [2025-04-19T14:27:12.878Z] Checked if tokens are valid: true, expires at: 1745076306977
+[debug] [2025-04-19T14:27:12.879Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2025-04-19T14:27:12.879Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"soussexplorer","name":"Souss Eplorer"}
+[debug] [2025-04-19T14:27:13.851Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 200
+[debug] [2025-04-19T14:27:13.852Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"name":"operations/create_project.global.8933647341038030789"}
+[debug] [2025-04-19T14:27:13.852Z] Checked if tokens are valid: true, expires at: 1745076306977
+[debug] [2025-04-19T14:27:13.852Z] Checked if tokens are valid: true, expires at: 1745076306977
+[debug] [2025-04-19T14:27:13.852Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.8933647341038030789 [none]
+[debug] [2025-04-19T14:27:14.503Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.8933647341038030789 200
+[debug] [2025-04-19T14:27:14.503Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.8933647341038030789 {"name":"operations/create_project.global.8933647341038030789","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","ready":true},"done":true,"error":{"code":9,"message":"Callers must accept Terms of Service","details":[{"@type":"type.googleapis.com/google.rpc.PreconditionFailure","violations":[{"type":"TOS","subject":"cloud","description":"Callers must accept Terms of Service"}]}]}}
+[debug] [2025-04-19T14:27:14.651Z] FirebaseError: Callers must accept Terms of Service
+    at OperationPoller.poll (C:\Users\crush\AppData\Roaming\npm\node_modules\firebase-tools\lib\operation-poller.js:24:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async createCloudProject (C:\Users\crush\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:213:29)
+    at async createFirebaseProjectAndLog (C:\Users\crush\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:71:9)
+    at async promptAndCreateNewProject (C:\Users\crush\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\project.js:32:12)
+    at async doSetup (C:\Users\crush\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\project.js:89:27)
+    at async init (C:\Users\crush\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\index.js:41:9)
+[error] 
+[error] Error: Failed to create project. See firebase-debug.log for more info.

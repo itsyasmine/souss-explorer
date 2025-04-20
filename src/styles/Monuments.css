@@ -1,0 +1,75 @@
+/* src/styles/Monuments.css */
+.monuments-container {
+    padding: 20px;
+    padding-bottom: 70px;
+    background-color: #f9f5f0;
+    min-height: 100vh;
+  }
+  
+  .monuments-container h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #352b1e;
+    text-align: center;
+  }
+  
+  .monuments-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  
+  @media (min-width: 768px) {
+    .monuments-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  .monument-card {
+    display: block;
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    text-decoration: none;
+    color: #352b1e;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+  }
+  
+  .monument-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .monument-image {
+    height: 160px;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .monument-info {
+    padding: 15px;
+  }
+  
+  .monument-info h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .monument-location {
+    font-size: 14px;
+    color: #666;
+    display: flex;
+    align-items: center;
+  }
+  
+  .monument-location::before {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-image: url('../assets/icons/location-icon.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 5px;
+  }

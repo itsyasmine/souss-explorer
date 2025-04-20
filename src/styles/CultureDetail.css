@@ -1,0 +1,110 @@
+/* src/styles/CultureDetail.css */
+.culture-detail-container {
+    padding-bottom: 70px;
+    background-color: #f9f5f0;
+    min-height: 100vh;
+  }
+  
+  .culture-header {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .back-button {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+  }
+  
+  .back-button img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .culture-header h1 {
+    font-size: 18px;
+    margin: 0;
+    flex-grow: 1;
+  }
+  
+  .culture-hero-image {
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  
+  .culture-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+  }
+  
+  .culture-categories {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .culture-category-badge, .culture-region-badge {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 5px 12px;
+    border-radius: 15px;
+    font-size: 12px;
+    color: #fff;
+  }
+  
+  .culture-content {
+    padding: 20px;
+  }
+  
+  .culture-description {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+  }
+  
+  .culture-section {
+    margin-bottom: 30px;
+  }
+  
+  .culture-section h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #8a5d3b;
+  }
+  
+  .uses-list {
+    padding-left: 20px;
+  }
+  
+  .uses-list li {
+    margin-bottom: 10px;
+  }
+  
+  .video-container {
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 10px;
+  }
+  
+  .video-container video {
+    width: 100%;
+    display: block;
+  }
+  
+  .fun-fact {
+    background-color: #ffe9d4;
+    padding: 15px;
+    border-radius: 10px;
+    border-left: 4px solid #d68c45;
+  }

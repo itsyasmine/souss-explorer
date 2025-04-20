@@ -1,0 +1,77 @@
+/* src/App.css */
+:root {
+  --primary-color: #d68c45;
+  --secondary-color: #8a5d3b;
+  --accent-color: #3c8a5d;
+  --background-color: #f9f5f0;
+  --text-color: #352b1e;
+  --light-text: #f9f5f0;
+  --border-radius: 12px;
+  --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 1.2rem;
+  color: var(--secondary-color);
+}
+
+.error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 1.2rem;
+  color: #d32f2f;
+}
+
+/* Card styling for common elements */
+.card {
+  background-color: white;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Button styling */
+.btn {
+  background-color: var(--primary-color);
+  color: var(--light-text);
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: var(--secondary-color);
+}
+
+/* Moroccan pattern decorative element */
+.moroccan-pattern {
+  background-image: url('./assets/patterns/moroccan-pattern.svg');
+  background-repeat: repeat;
+  opacity: 0.1;
+}

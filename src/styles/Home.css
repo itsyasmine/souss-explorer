@@ -1,0 +1,139 @@
+/* src/styles/Home.css */
+.home-container {
+    padding: 20px;
+    padding-bottom: 70px;
+    background-color: #f9f5f0;
+    min-height: 100vh;
+  }
+  
+  .hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 30px 20px;
+    background-color: #d68c45;
+    color: #fff;
+    border-radius: 12px;
+    text-align: center;
+  }
+  
+  .logo {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+  }
+  
+  .hero-section h1 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+  }
+  
+  .tagline {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  
+  .featured-content h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #352b1e;
+  }
+  
+  .category-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+  
+  .category-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    text-decoration: none;
+    color: #352b1e;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+  }
+  
+  .category-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .category-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .monuments-icon {
+    background-image: url('../assets/icons/monument-icon.svg');
+  }
+  
+  .culture-icon {
+    background-image: url('../assets/icons/culture-icon.svg');
+  }
+  
+  .recettes-icon {
+    background-image: url('../assets/icons/recipe-icon.svg');
+  }
+  
+  .quiz-icon {
+    background-image: url('../assets/icons/quiz-icon.svg');
+  }
+  
+  .category-card h3 {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  .featured-location {
+    margin-bottom: 30px;
+  }
+  
+  .feature-card {
+    display: block;
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    text-decoration: none;
+    color: #352b1e;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  }
+  
+  .feature-image {
+    height: 180px;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .agadir-oufella {
+    background-image: url('../assets/images/agadir-oufella.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+  }
+  
+  .feature-info {
+    padding: 15px;
+  }
+  
+  .feature-info h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .feature-info p {
+    font-size: 14px;
+    color: #666;
+  }
